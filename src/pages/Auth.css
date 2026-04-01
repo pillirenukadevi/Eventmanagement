@@ -1,0 +1,57 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 4rem);
+  padding: var(--spacing-md);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 450px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+}
+
+.auth-submit {
+  width: 100%;
+  margin-top: var(--spacing-md);
+}
+
+.auth-footer {
+  margin-top: var(--spacing-lg);
+  text-align: center;
+  color: var(--clr-text-muted);
+}
+
+.auth-toggle {
+  color: var(--clr-primary);
+  font-weight: 600;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  transition: color var(--transition-fast);
+}
+
+.auth-toggle:hover {
+  color: var(--clr-accent);
+  text-decoration: underline;
+}
+
+.alert-error {
+  background: rgba(239, 68, 68, 0.1);
+  color: #FCA5A5;
+  padding: 1rem;
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
